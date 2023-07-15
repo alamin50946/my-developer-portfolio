@@ -61,7 +61,8 @@ nav a {
 /* header related style */
 .header {
   background-color: #fff8f3;
-  background-image: url("../images/header_bg.png"), url('../images/developer.png');
+  background-image: url("../images/header_bg.png"),
+    url("../images/developer.png");
   background-repeat: no-repeat;
   background-position: bottom right, top left;
 }
@@ -171,10 +172,11 @@ footer {
 .footer-colum {
   width: 50%;
 }
-.social-links a{
+.social-links a {
   margin-right: 25px;
 }
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
   display: block;
   margin-bottom: 25px;
@@ -184,4 +186,12 @@ textarea {
   background: #fff;
   border: 0;
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  #what-i-do {
+    padding: 20px;
+  }
+  .skill-container {
+    flex-direction: column;
+  }
 }
